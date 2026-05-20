@@ -1,6 +1,8 @@
+import type { NextConfig } from "next";
+
 const repo = "portfolio";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
