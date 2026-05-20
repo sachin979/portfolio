@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Orbit from "../orbit/Orbit";
+const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
 export default function Hero() {
     return (
         <section className="relative overflow-hidden">
@@ -63,7 +64,7 @@ export default function Hero() {
                         </button>
 
                         <a
-                            href="/Sachin_Naik_Go_React_5YOE_Resume.pdf"
+                           href={`${basePath}/Sachin_Naik_Go_React_5YOE_Resume.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center rounded-2xl bg-[var(--accent)] px-6 py-3 font-medium text-white transition hover:opacity-90"

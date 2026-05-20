@@ -4,6 +4,8 @@ import {
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
+
 export default function Contact() {
   return (
     <section
@@ -33,7 +35,7 @@ export default function Contact() {
         <div className="mt-10 flex flex-wrap gap-4">
 
           <a
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Sachin_Naik_Go_React_5YOE_Resume.pdf`}
+            href={`${basePath}/Sachin_Naik_Go_React_5YOE_Resume.pdf`}
             target="_blank"
             className="flex items-center gap-2 rounded-2xl bg-[var(--accent)] px-5 py-3 font-medium text-white transition hover:opacity-90"
           >
