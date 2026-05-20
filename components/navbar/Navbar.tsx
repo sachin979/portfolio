@@ -19,7 +19,12 @@ export default function Navbar() {
           <a className="transition hover:text-white" href="#contact">Contact</a>
         </nav>
 
-        <button className="rounded-2xl  border border-zinc-800 px-4 py-2 text-sm hover:bg-zinc-900 transition">
+        <div className="hidden md:flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-3 py-2 text-sm text-zinc-300">
+          <span className="h-2 w-2 rounded-full bg-emerald-400" />
+          Open to opportunities
+        </div>
+
+        {/* <button className="rounded-2xl  border border-zinc-800 px-4 py-2 text-sm hover:bg-zinc-900 transition">
           <a
             href="/Sachin_Naik_Go_React_5YOE_Resume.pdf"
             target="_blank"
@@ -28,7 +33,7 @@ export default function Navbar() {
           >
             Resume
           </a>
-        </button>
+        </button> */}
       </div>
     </header>
   );
