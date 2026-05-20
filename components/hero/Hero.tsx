@@ -38,7 +38,7 @@ export default function Hero() {
 
                     {/* tech pills */}
                     <div className="mt-6 flex flex-wrap gap-2">
-                        {["Go", "React", "Kafka", "Redis", "MySQL", "OpenSearch"].map(
+                        {["Go", "React", "AWS", "Redis", "MySQL", "OpenSearch"].map(
                             (tech) => (
                                 <span
                                     key={tech}

@@ -6,9 +6,9 @@ import {
     SiGo,
     SiRedis,
     SiMysql,
-    SiApachekafka,
     SiOpensearch,
-    SiReact
+    SiDocker,
+    SiKubernetes
 } from "react-icons/si";
 
 import {
@@ -30,15 +30,15 @@ const nodes = [
     {
         name: "Redis",
         icon: <SiRedis size={26} className="text-red-400"  />,
-        x: "84%",
+        x: "71%",
         y: "28%",
-        primary: true,
+        primary: false,
     },
     {
         name: "Opensearch",
         icon: <SiOpensearch size={24}  className="text-blue-300" />,
-        x: "76%",
-        y: "72%",
+        x: "88%",
+        y: "62%",
         primary: false,
     },
     //   {
@@ -50,15 +50,22 @@ const nodes = [
     {
         name: "MySQL",
         icon: <SiMysql size={30}  className="text-blue-300"/>,
-        x: "46%",
+        x: "66%",
         y: "88%",
         primary: false,
     },
     {
-        name: "Kafka",
-        icon: <SiApachekafka size={30} />,
-        x: "14%",
-        y: "38%",
+        name: "Docker",
+        icon: <SiDocker size={34} className="text-blue-500"/>,
+        x: "26%",
+        y: "68%",
+        primary: false,
+    },
+    {
+        name: "Kubernetes",
+        icon: <SiKubernetes size={30} className="text-blue-500"/>,
+        x: "12%",
+        y: "35%",
         primary: false,
     },
 ];
